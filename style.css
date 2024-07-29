@@ -11,7 +11,7 @@
 }
 
 header{
-    background-color: #24252a ;
+    background: linear-gradient(to bottom ,#1C498D,#0B2353) ;
     box-shadow: 0px 3px 10px #464646 ;
 
 }
@@ -28,8 +28,8 @@ header{
     align-items: center;
 }
 
-.logo h1{
-    color: var(--color-white);
+.logo img{
+   width: 100px;
 }
 
 .nav-list{
@@ -56,9 +56,13 @@ header{
     color: var(--color-white);
 }
 
+.login-button{
+    display: flex;
+    align-items: center;
+}
 .login-button button{
     border: none;
-    background-color: #0187a7;
+    background: linear-gradient(90deg,#7a3f73da,#723C8A,#613475);
     padding: 10px 15px;
     border-radius: 5px;
 
@@ -80,6 +84,9 @@ header{
 }
 
 @media screen and (max-width:730px){
+    .logo img{
+        width: 64px;
+    }
     .nav-bar{
         padding: 1.5rem;
     }
@@ -90,7 +97,8 @@ header{
     }
 
     .mobile-menu-icon{
-        display: block;
+        display: flex;
+        align-items: center;
     }
     .mobile-menu-icon button{
         background-color: transparent;
